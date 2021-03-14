@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Unuruu learning to make world standart website by using html 5">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my page</title>
+    <style>
+        *{box-sizing: border-box;}
+        :root {
+            --default-primary-color:#CD2;
+            --default-border: 2px dashed grey;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        h1{color:var(--default-primary-color);
+        }
+        .recent-news h2{
+            color:var(--default-primary-color);
+        }
+        section{border:var(--default-border);
+        }
+        .main-content{
+
+        }
+        .recent-news{
+
+        }
+        .news-card-list{
+        display: flex;
+        flex-wrap: wrap;   
+        }
+        .default-news-card{
+        flex: 1 1 20ch;
+        }
+        .ad-section{
+
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 3vw minmax(20ch, 50ch) minmax(60ch, auto) 3vw ;
+            grid-template-areas: 
+            ". logo menu ."
+            ". logo links .";
+        }
+        .footer-logo{
+        grid-area: logo;  
+        }
+        .footer-nav{
+        grid-area: menu;
+        }
+        .footer-links{
+        grid-area: links;  
+        }
+        footer>nav>ul{display: flex; flex-wrap: wrap;}
+        footer>nav>ul>li{flex: 1 1 10% ;}
+        @media screen and (min-width:1024px;){
+            footer{
+            display: grid;
+            grid-template-columns: 1vw minmax(20ch, auto) 1vw ;
+            grid-template-areas: 
+            ". logo ."
+            ". links ."
+            ". menu .";
+        }
+        }
+            
+        
+    </style>
+</head>
+<body>
+
+   <header class="main-header">
+       <a href="#"><img src="#" alt="" class="log"></a>
+       <nav class="main-menu">
+           <ul class="main-menu-list">
+               <li class="menu-item"><a href="/page1.html">huudas1</a></li>
+               <li class="menu-item"><a href="/page2.html">huudas2</a></li>
+               <li class="menu-item"><a href="/page3.html">huudas3</a></li>
+               <li class="menu-item"><a href="/page4.html">huudas4</a></li>
+           </ul>
+       </nav>
+   </header>
+    <main class="main-content">
+        <h1>Welcome</h1>
+        <section class="recent-news">
+            <h2>Recent News</h2>
+            <div class="news-card-list">
+                <article class="default-news-card">
+                    <h3>Title1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt voluptas sed dolores soluta, laboriosam pariatur dignissimos dolorem exercitationem blanditiis?</p>
+                </article>
+                <article class="default-news-card">
+                    <h3>Title2</h3>
+                    <p>Eaque pariatur inventore necessitatibus! Vero consequatur nulla necessitatibus, molestias libero similique obcaecati ratione aspernatur aperiam, est esse facere, quas repellendus?</p>
+                </article>
+                <article class="default-news-card">
+                    <h3>Title3</h3>
+                    <p>Cupiditate, illum? Perspiciatis odit veritatis libero odio exercitationem non ullam consectetur, nobis quos fugiat dolores est eum, voluptates laboriosam veniam?</p>
+                </article>
+                <article class="default-news-card">
+                    <h3>Title4</h3>
+                    <p>Cum consequuntur saepe aliquid mollitia tempora delectus necessitatibus magnam dicta. Iste quaerat praesentium, fugit voluptate pariatur doloremque tempora sed sit.</p>
+                </article>
+            </div>
+        </section>
+        <section class="ad-section">
+            <img src="ad1.gif" alt="">
+            <img src="ad2.gif" alt="">
+            <img src="ad3.gif" alt="">
+            <h2>Advertisement</h2>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-logo"><img src="logo.png" alt="this is footer section"></div>
+        <nav class="footer-nav"> 
+            <ul>
+            <li>
+                <a href="">TITLE1</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE2</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE3</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE4</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE5</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE6</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE7</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TITLE8</a>
+                <ul>
+                    <li><a href="pages01.html">Menu01</a></li>
+                    <li><a href="pages02.html">Menu02</a></li>
+                    <li><a href="pages03.html">Menu03</a></li>
+                    <li><a href="pages04.html">Menu04</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+        <div class="footer-links"><a href="">Link1</a><a href="">Link2</a><a href="">Link3</a><a href="">Link4</a></div>
+    </footer>
+</body> 
+</html>
