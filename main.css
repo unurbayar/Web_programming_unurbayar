@@ -1,5 +1,8 @@
 :root{
         --default-nav-list-color: white;
+        --default-font:  Tahoma, Verdana, sans-serif;
+        --default-border: 1px dashed black; 
+        --default-nav-font: "oscl","Helvetica Neue",Helvetica,Arial, sans-serif;
     }
 
 body{
@@ -12,6 +15,7 @@ li{
 }
 a{
     text-decoration:none;
+    color: #FFFFFF;
 }
 main{
     margin: auto;
@@ -20,7 +24,12 @@ header{
     margin: 0px;
 }
 footer{
-    margin-bottom:0px;
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+}
+p{
+    font-family:var(--default-font)
 }
 .header-background{
     background-color: black;
@@ -29,26 +38,8 @@ footer{
     display: block;
     margin-left:auto;
     margin-right:auto;
-    width:900px;
-    height:80px;  
-}
-
-.news-card-list{
-    display: flex;
-    flex-wrap: wrap;   
-}
-.default-news-card{
-    flex: 1 1 20ch;
-}
-.aside-class{
-    float:left;
-    margin-top: 0px;
-    margin-right: 40px;
-    margin-left:0px;
-    background-color: black ;
-}
-.side-bar{
-  padding:0;
+    width: 80px;
+    height: 80px;  
 }
 .nav-list{
     margin-top:50px;
@@ -57,9 +48,10 @@ footer{
 }
 .a-class{
     color:var(--default-nav-list-color);
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: var(--default-nav-font);
     margin-right: 40px;
     margin-left: 15px;
+   
 }
 .main-ul-footer{
     display:flex;
@@ -73,3 +65,82 @@ footer{
     font-family: 'Courier New', monospace;
 }
 
+.news-card-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.default-news-card{
+    flex: 1 1 20ch;
+    position: relative;
+    margin:10px;
+    border:var(--default-border);
+    
+}
+.news-title{
+    position: absolute;
+    width:250px;
+    
+}
+.news-title  a {
+width: 100%;
+height: 50px;
+background: rgba(0,0,0,0.6);
+color: white;
+display: block;
+bottom: 0px;
+position: absolute;
+z-index: 999;
+font-family: var(--default-font);
+}
+.new_news{
+    padding-right:10px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: var(--default-font);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.more-news{
+    margin-left:200px;  
+    margin-right:200px;
+    
+}
+.more_news_h1{
+    text-align: center;
+}
