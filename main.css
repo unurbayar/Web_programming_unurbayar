@@ -2,7 +2,8 @@
         --default-nav-list-color: white;
         --default-font:  Tahoma, Verdana, sans-serif;
         --default-border: 1px dashed black; 
-        --default-nav-font: "oscl","Helvetica Neue",Helvetica,Arial, sans-serif;
+        --default-nav-font:  "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+
     }
 
 body{
@@ -74,16 +75,15 @@ p{
     flex: 1 1 20ch;
     position: relative;
     margin:10px;
-    border:var(--default-border);
     
 }
 .news-title{
     position: absolute;
-    width:250px;
+    width:212px;
     
 }
 .news-title  a {
-width: 100%;
+width: 126%;
 height: 50px;
 background: rgba(0,0,0,0.6);
 color: white;
@@ -93,9 +93,7 @@ position: absolute;
 z-index: 999;
 font-family: var(--default-font);
 }
-.new_news{
-    padding-right:10px;
-}
+
 
 .sidenav {
   height: 100%;
@@ -143,4 +141,20 @@ font-family: var(--default-font);
 }
 .more_news_h1{
     text-align: center;
+    margin:auto;
+}
+.new_news{
+    height:250px;
+    width:250px;
+}
+.code_in_shell{
+    display:block;
+    font-family: 'Courier New', Courier, monospace;
+    color:#FFFFFF;
+    background-color:#232c36;
+    padding:10px;
+    margin:20px;
+}
+.prompt_name{
+    color:red;
 }
