@@ -1,11 +1,10 @@
 :root{
         --default-nav-list-color: white;
-        --default-font:  Tahoma, Verdana, sans-serif;
+        --default-font:  'Exo 2', sans-serif;
         --default-border: 1px dashed black; 
-        --default-nav-font:  "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+        --default-nav-font:  'Exo 2', sans-serif;
 
-    }
-
+}
 body{
     margin: 0;
     padding: 0;
@@ -92,6 +91,7 @@ bottom: 0px;
 position: absolute;
 z-index: 999;
 font-family: var(--default-font);
+border-radius: 6px;
 }
 
 
@@ -142,10 +142,16 @@ font-family: var(--default-font);
 .more_news_h1{
     text-align: center;
     margin:auto;
+    font-family:var(--default-font);
 }
 .new_news{
     height:250px;
     width:250px;
+   
+}
+.new_news:hover{
+    transform:scale(1.1);
+    transition-timing-function: ease-in;
 }
 .code_in_shell{
     display:block;
@@ -154,7 +160,22 @@ font-family: var(--default-font);
     background-color:#232c36;
     padding:10px;
     margin:20px;
+    border-radius:10px;
+    -webkit-box-shadow:  18px 7px 11px 0px rgba(136,154,193);
+    -moz-box-shadow:     18px 7px 11px 0px rgba(136,154,193);
+     box-shadow:         5px 4px 5px 0px rgba(136,154,193);
+    
 }
 .prompt_name{
     color:red;
+    
+}
+h1:hover{
+    border-bottom:2px solid #ff0000;
+    transform:translateX(40px)scale(5);
+    transform:rotate(10deg)translateX(40px)scale(1.5);
+    transition-duration: 5s;
+}
+.main_p{
+    font-family:'Exo 2', sans-serif;
 }
