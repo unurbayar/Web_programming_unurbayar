@@ -55,46 +55,6 @@ p{
     margin-left: 15px;
    
 }
-.main-ul-footer{
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 200px;
-    background-color: black;
-    margin-bottom:0px;
-}
-.footer-sub-li{
-    color:var(--default-nav-list-color);
-    font-family: 'Courier New', monospace;
-}
-
-.news-card-list{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.default-news-card{
-    flex: 1 1 20ch;
-    position: relative;
-    margin:10px;
-    
-}
-.news-title{
-    position: absolute;
-    width:212px;
-    
-}
-.news-title  a {
-width: 126%;
-height: 50px;
-background: rgba(0,0,0,0.6);
-color: white;
-display: block;
-bottom: 0px;
-position: absolute;
-z-index: 1;
-font-family: var(--default-font);
-border-radius: 6px;
-}
 
 
 .sidenav {
