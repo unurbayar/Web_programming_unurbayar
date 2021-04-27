@@ -5,6 +5,8 @@
         --default-nav-font:  'Exo 2', sans-serif;
 
 }
+
+
 * {
     box-sizing: border-box;
 }
@@ -26,9 +28,6 @@ main{
 header{
     margin: 0px;
     max-width:100%;
-}
-p{
-    font-family:var(--default-font)
 }
 .header-background{
     background-color: black;
@@ -54,11 +53,6 @@ p{
     margin-left: 15px;
    
 }
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
 .sidenav {
   height: 100%;
   width: 0;
@@ -93,4 +87,11 @@ p{
   font-size: 36px;
   margin-left: 50px;
 }
+@media screen and (max-width: 360px){
+    .header-img{width:30vw;height:30vw;}
+}
+@media screen and (max-width: 360px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 
+  }
