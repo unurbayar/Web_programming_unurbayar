@@ -90,7 +90,7 @@ header{
 @media screen and (max-width: 360px){
     .header-img{width:30vw;height:30vw;}
 }
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 

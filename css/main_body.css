@@ -99,15 +99,15 @@
     flex-wrap: wrap;
     margin: 0%;
   }
-  .item-a{width:100%}
-  .item-b{width:100%}
-  .item-c{width:100%}
-  .item-d{width:100%}
-  .item-e{width:100%}
-  .item-f{width:100%}  
-  .item-g{width:100%}
-  .item-h{width:100%}
-  .item-i{width:100%}
+  .item-a{width:100%;margin-bottom:5vw;}
+  .item-b{width:100%;margin-bottom:5vw;}
+  .item-c{width:100%;margin-bottom:5vw;}
+  .item-d{width:100%;margin-bottom:5vw;}
+  .item-e{width:100%;margin-bottom:5vw;}
+  .item-f{width:100%;margin-bottom:5vw;}  
+  .item-g{width:100%;margin-bottom:5vw;}
+  .item-h{width:100%;margin-bottom:5vw;}
+  .item-i{width:100%;margin-bottom:5vw;}
   .img_article{width:300px;height:200px;}
   .img_arc_main{width:300px;height:200px;}
 }
